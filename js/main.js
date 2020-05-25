@@ -3,7 +3,7 @@
 var ESC_CODE = 27;
 var body = document.querySelector('body');
 var SUCCESS_CODE = 200;
-var TEST_URL = 'http://httpbin.org/post';
+var TEST_URL = 'https://httpbin.org/post';
 //валидация форм
 (function () {
 
