@@ -454,14 +454,14 @@ body {
   line-height: 28px;
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   color: #77a6ac;
 }
 .section-title span::before {
   content: "";
   width: 4px;
   height: 50px;
-  margin-right: 37px;
+  margin-right: 18px;
   background-color: #4e5255;
 }
 
@@ -518,6 +518,7 @@ body {
 }
 .button:hover {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   color: #77a6ac;
@@ -561,6 +562,7 @@ body {
 }
 .page-header__nav a:hover {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   color: #77a6ac;
 }
@@ -568,7 +570,7 @@ body {
 .page-header__phone {
   font-size: 30px;
   line-height: 39px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #838688;
 }
 
@@ -620,6 +622,7 @@ body {
 }
 .page-header__nav-item a:hover::after {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   opacity: 1;
 }
@@ -739,7 +742,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 113px;
+  padding-left: 163px;
 }
 
 .intro__title {
@@ -747,7 +750,7 @@ body {
   line-height: 78px;
   max-width: 900px;
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 58px;
   text-transform: uppercase;
 }
 
@@ -813,7 +816,7 @@ body {
 }
 .services {
   padding-top: 50px;
-  padding-bottom: 63px;
+  padding-bottom: 75px;
 }
 
 .services__container {
@@ -833,6 +836,7 @@ body {
   line-height: 22px;
   width: calc(100% - 500px);
   max-width: 580px;
+  padding-bottom: 25px;
 }
 .services__text p {
   margin: 0;
@@ -848,6 +852,7 @@ body {
     line-height: 20px;
     width: calc(100% - 400px);
     max-width: 480px;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -873,8 +878,8 @@ body {
   }
 }
 .prices {
-  padding-top: 97px;
-  padding-bottom: 80px;
+  padding-top: 95px;
+  padding-bottom: 130px;
   background-image: url("../img/prices-bg.png");
   background-repeat: no-repeat;
 }
@@ -888,7 +893,7 @@ body {
 .prices__title {
   max-width: 1000px;
   margin-left: auto;
-  margin-bottom: 124px;
+  margin-bottom: 134px;
   padding-right: 56px;
   text-align: right;
   border-right: 4px solid #4e5255;
@@ -909,7 +914,7 @@ body {
   margin-bottom: 64px;
   width: 46.72%;
   margin-right: 6.56%;
-  padding: 32px 64px;
+  padding: 30px 64px;
   background-color: #ffffff;
   border: 1px solid rgba(78, 82, 85, 0.3);
   border-radius: 2px;
@@ -922,11 +927,13 @@ body {
 }
 .prices__item:hover {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
 }
 .prices__item:hover .prices__item-button {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   opacity: 1;
 }
@@ -951,7 +958,7 @@ body {
 .prices__item-info {
   display: flex;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .prices__item-info div {
   position: relative;
@@ -980,7 +987,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -995,6 +1002,7 @@ body {
 .prices__item-info div p span {
   font-size: 23px;
   line-height: 28px;
+  margin-top: 9px;
   font-weight: 700;
   color: #77a6ac;
 }
@@ -1003,7 +1011,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 .prices__item-note span {
   font-size: 23px;
@@ -1031,7 +1039,7 @@ body {
   font-size: 23px;
   line-height: 28px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   color: #77a6ac;
 }
@@ -1039,7 +1047,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .prices__info p:last-child {
   margin-bottom: 0;
@@ -1069,7 +1077,7 @@ body {
 @media (max-width: 1024px) {
   .prices {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-size: 350px;
   }
 
@@ -1123,7 +1131,7 @@ body {
 @media (max-width: 767px) {
   .prices {
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     background-size: 200px;
   }
 
@@ -1182,8 +1190,8 @@ body {
   }
 }
 .stages {
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: 35px;
+  padding-bottom: 175px;
   background-image: url("../img/stages-bg.png");
   background-repeat: no-repeat;
   background-position: right top;
@@ -1197,7 +1205,7 @@ body {
 
 .stages__title {
   max-width: 460px;
-  margin-bottom: 50px;
+  margin-bottom: 64px;
 }
 
 .stages__list {
@@ -1214,7 +1222,7 @@ body {
   line-height: 22px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .stages__item::before {
   content: counter(number);
@@ -1238,7 +1246,7 @@ body {
 }
 @media (max-width: 1024px) {
   .stages {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 80px;
     background-size: 380px;
   }
@@ -1259,7 +1267,6 @@ body {
 }
 @media (max-width: 767px) {
   .stages {
-    padding-top: 40px;
     padding-bottom: 40px;
     background-size: 200px;
   }
@@ -1295,8 +1302,10 @@ body {
 }
 
 .consultation__title {
+  font-size: 50px;
+  line-height: 60px;
   max-width: 650px;
-  margin-bottom: 75px;
+  margin-bottom: 68px;
 }
 
 .consultation__form {
@@ -1332,6 +1341,7 @@ body {
 }
 .consultation__form-inputs input:hover, .consultation__form-inputs input:focus {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -1362,6 +1372,7 @@ body {
 }
 .consultation__form-consent a:hover {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   opacity: 0.7;
 }
@@ -1373,6 +1384,8 @@ body {
   }
 
   .consultation__title {
+    font-size: 40px;
+    line-height: 50px;
     max-width: 500px;
     margin-bottom: 50px;
   }
@@ -1395,6 +1408,8 @@ body {
   }
 
   .consultation__title {
+    font-size: 24px;
+    line-height: 30px;
     max-width: 350px;
     margin-bottom: 40px;
   }
@@ -1438,7 +1453,6 @@ body {
 }
 .about {
   padding-top: 50px;
-  padding-bottom: 65px;
 }
 
 .about__container {
@@ -1454,7 +1468,7 @@ body {
 }
 
 .about__title {
-  margin-bottom: 56px;
+  margin-bottom: 48px;
 }
 
 .about__text {
@@ -1462,10 +1476,11 @@ body {
   line-height: 22px;
   width: calc(100% - 500px);
   max-width: 580px;
+  padding-bottom: 10px;
 }
 .about__text p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 .about__text p:last-child {
   margin-bottom: 0;
@@ -1484,12 +1499,15 @@ body {
     line-height: 20px;
     width: calc(100% - 340px);
     max-width: 480px;
+    padding-bottom: 0;
+  }
+  .about__text p {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 767px) {
   .about {
     padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .about__container {
@@ -1520,7 +1538,8 @@ body {
   }
 }
 .advantages {
-  padding-top: 60px;
+  padding-top: 152px;
+  padding-bottom: 50px;
   background-image: url("../img/advantages-bg.png");
   background-repeat: no-repeat;
 }
@@ -1534,7 +1553,7 @@ body {
 .advantages__title {
   max-width: 800px;
   margin-left: auto;
-  margin-bottom: 156px;
+  margin-bottom: 165px;
   padding-right: 56px;
   text-align: right;
   border-right: 4px solid #4e5255;
@@ -1578,6 +1597,8 @@ body {
 }
 @media (max-width: 1024px) {
   .advantages {
+    padding-top: 100px;
+    padding-bottom: 40px;
     background-size: 400px;
   }
 
@@ -1604,6 +1625,8 @@ body {
 }
 @media (max-width: 767px) {
   .advantages {
+    padding-top: 60px;
+    padding-bottom: 40px;
     background-size: 170px;
   }
 
@@ -1628,14 +1651,17 @@ body {
     line-height: 22px;
     margin-bottom: 10px;
   }
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .faq {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 160px;
 }
 
 .faq__title {
-  margin-bottom: 92px;
+  margin-bottom: 87px;
 }
 
 .faq__list {
@@ -1672,6 +1698,7 @@ body {
 }
 .faq__list-item.active .faq__list-question::after {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   background-image: url("../img/faq-cross-rotate.svg");
 }
@@ -1715,10 +1742,12 @@ body {
 }
 .faq__list-question:hover {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
 }
 .faq__list-question:hover::after {
   outline: none;
+  cursor: url("../img/mouse.png"), pointer;
   transition: 0.3s;
   background-color: #838688;
 }
@@ -1738,7 +1767,7 @@ body {
 
 @media (max-width: 1024px) {
   .faq {
-    padding-top: 70px;
+    padding-top: 40px;
     padding-bottom: 100px;
   }
 
@@ -1758,7 +1787,6 @@ body {
 }
 @media (max-width: 767px) {
   .faq {
-    padding-top: 40px;
     padding-bottom: 50px;
   }
 
