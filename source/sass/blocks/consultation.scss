@@ -1,0 +1,151 @@
+.consultation {
+  padding-top: 105px;
+  padding-bottom: 133px;
+  background-color: $green-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.consultation__title {
+  max-width: 650px;
+  margin-bottom: 75px;
+}
+
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation__form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
+
+  input {
+    @include not-hover;
+    @include font(20, 24);
+    width: 49.16%;
+    max-width: 590px;
+    margin-right: 1.68%;
+    padding: 53px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    border: none;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::placeholder {
+      @include font(20, 24);
+    }
+
+    &:hover,
+    &:focus {
+      @include hover;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+.consultation__form-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.consultation__form-button {
+  margin-right: 33px;
+  flex-shrink: 0
+}
+
+.consultation__form-consent {
+  @include font(18, 22);
+  max-width: 470px;
+  margin: 0;
+
+  a {
+    @include not-hover;
+    text-decoration-skip-ink: none;
+    opacity: 1;
+
+    &:hover {
+      @include hover;
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: $desktop-min-width) {
+  .consultation {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .consultation__title {
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  .consultation__form-inputs {
+    margin-bottom: 55px;
+
+    input {
+      padding: 30px;
+    }
+  }
+
+  .consultation__form-button {
+    margin-right: 25px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .consultation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .consultation__title {
+    max-width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .consultation__form-inputs {
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    input {
+      @include font(18, 22);
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::placeholder {
+        @include font(18, 22);
+      }
+    }
+  }
+
+  .consultation__form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .consultation__form-button {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .consultation__form-consent {
+    @include font(16, 20);
+    max-width: 100%;
+  }
+}

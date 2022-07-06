@@ -1,0 +1,82 @@
+.intro {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  background-color: $green-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 113px;
+}
+
+.intro__title {
+  @include font(65, 78);
+  max-width: 900px;
+  margin: 0;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+}
+
+.intro__button {
+  @include font(32, 38);
+}
+
+@media (max-width: $desktop-width) {
+  .intro__container {
+    padding-left: 50px;
+  }
+
+  .intro__title {
+    @include font(55, 68);
+    max-width: 750px;
+  }
+}
+
+@media (max-width: $desktop-min-width) {
+  .intro {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .intro__container {
+    padding-left: 30px;
+  }
+
+  .intro__title {
+    @include font(40, 48);
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+
+  .intro__button {
+    @include font(22, 26);
+  }
+
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .intro__container {
+    padding-left: 15px;
+  }
+
+  .intro__title {
+    @include font(26, 34);
+    max-width: 370px;
+    margin-bottom: 30px;
+  }
+
+  .intro__button {
+    @include font(20, 24);
+  }
+
+}
