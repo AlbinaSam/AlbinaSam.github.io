@@ -113,8 +113,8 @@ if (darkMenuImg && menuLinksWrapper) {
 
 //Меню
 const menuSection = document.querySelector('.menu');
-const cigarMenuLinks = menuSection.querySelectorAll('[data-link="cigar"]');
-const wineMenuLinks = menuSection.querySelectorAll('[data-link="wine"]');
+const cigarMenuLinks = document.querySelectorAll('[data-link="cigar"]');
+const wineMenuLinks = document.querySelectorAll('[data-link="wine"]');
 const headerMenuLinks = menuSection.querySelectorAll('.section-header__links a');
 const headerCigarLink = menuSection.querySelector('.section-header__links [data-link="cigar"]');
 const headerWineLink = menuSection.querySelector('.section-header__links [data-link="wine"]');
@@ -230,7 +230,7 @@ if (interiorSliderContainer) {
 
   const swiper = new Swiper (interiorSliderContainer, {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 1,
     direction: 'horizontal',
     //effect: "fade",
 
