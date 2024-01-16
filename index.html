@@ -5,348 +5,526 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SMG</title>
-  <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
+  <title>19/72</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Thin.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 
   <body>
     <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-back" viewBox="0 0 51 16"><g fill="none">
+<path d="M0.292892 7.28313C-0.0976295 7.67365 -0.0976295 8.30682 0.292892 8.69734L6.65685 15.0613C7.04738 15.4518 7.68054 15.4518 8.07107 15.0613C8.46159 14.6708 8.46159 14.0376 8.07107 13.6471L2.41422 7.99023L8.07107 2.33338C8.46159 1.94286 8.46159 1.30969 8.07107 0.919167C7.68054 0.528642 7.04738 0.528642 6.65685 0.919167L0.292892 7.28313ZM51 6.99023L1 6.99023V8.99023L51 8.99023V6.99023Z" fill="#C4A478"/>
+</g></symbol><symbol id="icon-arrow" viewBox="0 0 16 51"><g fill="none">
+<path d="M7.58891 50.6973C7.97944 51.0879 8.6126 51.0879 9.00313 50.6973L15.3671 44.3334C15.7576 43.9429 15.7576 43.3097 15.3671 42.9192C14.9766 42.5286 14.3434 42.5286 13.9529 42.9192L8.29602 48.576L2.63917 42.9192C2.24864 42.5286 1.61548 42.5286 1.22495 42.9192C0.834428 43.3097 0.834428 43.9429 1.22495 44.3334L7.58891 50.6973ZM7.29602 -0.00976562L7.29602 49.9902H9.29602L9.29602 -0.00976563L7.29602 -0.00976562Z" fill="#C4A478"/>
+</g></symbol><symbol id="icon-burger" viewBox="0 0 40 40"><g fill="none">
+<path d="M35.625 20C35.625 20.4973 35.4275 20.9742 35.0758 21.3258C34.7242 21.6775 34.2473 21.875 33.75 21.875H6.25C5.75272 21.875 5.27581 21.6775 4.92417 21.3258C4.57254 20.9742 4.375 20.4973 4.375 20C4.375 19.5027 4.57254 19.0258 4.92417 18.6742C5.27581 18.3225 5.75272 18.125 6.25 18.125H33.75C34.2473 18.125 34.7242 18.3225 35.0758 18.6742C35.4275 19.0258 35.625 19.5027 35.625 20ZM6.25 11.875H33.75C34.2473 11.875 34.7242 11.6775 35.0758 11.3258C35.4275 10.9742 35.625 10.4973 35.625 10C35.625 9.50272 35.4275 9.02581 35.0758 8.67417C34.7242 8.32254 34.2473 8.125 33.75 8.125H6.25C5.75272 8.125 5.27581 8.32254 4.92417 8.67417C4.57254 9.02581 4.375 9.50272 4.375 10C4.375 10.4973 4.57254 10.9742 4.92417 11.3258C5.27581 11.6775 5.75272 11.875 6.25 11.875ZM33.75 28.125H6.25C5.75272 28.125 5.27581 28.3225 4.92417 28.6742C4.57254 29.0258 4.375 29.5027 4.375 30C4.375 30.4973 4.57254 30.9742 4.92417 31.3258C5.27581 31.6775 5.75272 31.875 6.25 31.875H33.75C34.2473 31.875 34.7242 31.6775 35.0758 31.3258C35.4275 30.9742 35.625 30.4973 35.625 30C35.625 29.5027 35.4275 29.0258 35.0758 28.6742C34.7242 28.3225 34.2473 28.125 33.75 28.125Z" fill="#C4A478"/>
+</g></symbol><symbol id="icon-cross" viewBox="0 0 40 40"><g fill="none">
+<path d="M31.9126 30.5876C32.0047 30.6734 32.0785 30.7769 32.1298 30.8919C32.181 31.0069 32.2086 31.131 32.2108 31.2569C32.213 31.3828 32.1899 31.5078 32.1427 31.6245C32.0956 31.7413 32.0254 31.8473 31.9364 31.9364C31.8473 32.0254 31.7413 32.0956 31.6245 32.1427C31.5078 32.1899 31.3828 32.213 31.2569 32.2108C31.131 32.2086 31.0069 32.181 30.8919 32.1298C30.7769 32.0785 30.6734 32.0047 30.5876 31.9126L20.0001 21.3266L9.41255 31.9126C9.23483 32.0782 8.99978 32.1683 8.7569 32.164C8.51402 32.1597 8.28229 32.0613 8.11052 31.8896C7.93876 31.7178 7.84037 31.4861 7.83608 31.2432C7.8318 31.0003 7.92195 30.7653 8.08755 30.5876L18.6735 20.0001L8.08755 9.41255C7.92195 9.23483 7.8318 8.99978 7.83608 8.7569C7.84037 8.51402 7.93876 8.28229 8.11052 8.11052C8.28229 7.93876 8.51402 7.84037 8.7569 7.83608C8.99978 7.8318 9.23483 7.92195 9.41255 8.08755L20.0001 18.6735L30.5876 8.08755C30.7653 7.92195 31.0003 7.8318 31.2432 7.83608C31.4861 7.84037 31.7178 7.93876 31.8896 8.11052C32.0613 8.28229 32.1597 8.51402 32.164 8.7569C32.1683 8.99978 32.0782 9.23483 31.9126 9.41255L21.3266 20.0001L31.9126 30.5876Z" fill="#C4A478"/>
+</g></symbol><symbol id="icon-slider-arrow" viewBox="0 0 31 16"><g fill="none">
+<path d="M0.292891 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292891 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292891 8.70711ZM31 9L0.999998 9V7L31 7V9Z" fill="#C4A478"/>
+</g></symbol></svg>
     </div>
     <div class="wrapper">
-      <header class="page-header">
-        <div class="container page-header__container">
-          <img src="img/logo-header.svg" width="235" height="132" alt="Логотип" class="page-header__logo">
-          <nav class="page-header__nav">
-            <a href="tel:+74993503474" class="page-header__phone">+7 (499) 350 34 74</a>
-            <button class="page-header__nav-toggle js_toggle-nav" aria-label="Открыть меню"></button>
-              <ul class="page-header__nav-list">
-                <li class="page-header__nav-item">
-                  <a href="#services">Услуги</a>
-                </li>
-                <li class="page-header__nav-item">
-                  <a href="#prices">Цены</a>
-                </li>
-                <li class="page-header__nav-item">
-                  <a href="#stages">Этапы оформления</a>
-                </li>
-                <li class="page-header__nav-item">
-                  <a href="#about">О компании</a>
-                </li>
-                <li class="page-header__nav-item">
-                  <a href="#footer">Контакты</a>
-                </li>
-              </ul>
-          </nav>
+      <header class="header">
+        <div class="container header__open-menu">
+          <button>
+            <svg width="40" height="40">
+              <use xlink:href="#icon-burger"></use>
+            </svg>
+          </button>
         </div>
+        <div class="container header__container">
+          <div class="header__logo">
+            <img src="img/logo.svg" width="203" height="64" alt="19/72">
+            <h1 class="header__title">Сигарный лаундж для искушенных ценителей</h1>
+          </div>
+          <a class="link-down" href="#menu">
+            <svg width="16" height="51">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+            <span>пройдёмте в&nbsp;бар</span>
+          </a>
+        </div>
+        <div class="header__nav">
+          <div class="container header__nav-container">
+            <button class="header__close-menu">
+              <svg width="40" height="40">
+                <use xlink:href="#icon-cross"></use>
+              </svg>
+            </button>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a>Меню</a>
+                <ul class="header__subnav-list">
+                  <li>
+                    <a href="#cigar">Хъюмедор</a>
+                  </li>
+                  <li>
+                    <a href="#wine">Винный погреб</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <a href="#interior">Интерьер</a>
+              </li>
+              <li class="header__nav-item">
+                <a>Афиша</a>
+                <ul class="header__subnav-list">
+                  <li>
+                    <a href="#">Скоро будут</a>
+                  </li>
+                  <li>
+                    <a href="#">Уже пршошли</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Забронировать столик</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <p class="header__nav-reserv">Забронировать столик по телефону
+              <a href="tel:+79661770099">+7 (966) 177-00-99</a>
+            </p>
+          </div>
+        </div>
+        <img class="header__slipping-bg" src="img/slipping-bg.png" srcset="img/slipping-bg.png 1x, img/slipping-bg@2x.png 2x" width="1920" height="622" alt="Фон">
       </header>
-      <main class="page-main">
-        <section class="intro" style="background-image: url('img/intro-bg@2x.png');">
-          <div class="container intro__container">
-            <h1 class="intro__title">Оформление регистрации медицинских изделий всех классов риска</h1>
-            <a href="#" class="button intro__button">Заказать оформление</a>
-          </div>
-        </section>
-        <section id="services" class="services">
-          <div class="container services__container">
-            <h2 class="section-title services__title">
-              <span>Мы предлагаем</span>
-              Оформление регистрационного удостоверения «под ключ»</h2>
-            <div class="services__text">
-              <p>Регистрация медицинского изделия в Росздравнадзоре является процедурой длительной и зачастую тернистой.</p>
-              <p>ООО «Смарт Медикал Групп» помогает своим заказчикам пройти этот процесс более комфортно и быстро, обеспечивая максимальную прозрачность.</p>
-              <p>Бонусом для наших клиентов является бесплатное консультирование в области регистрации медицинских изделий.</p>
-            </div>
-          </div>
-        </section>
-        <section id="prices" class="prices">
+      <main class="main">
+        <section class="menu" id="menu">
           <div class="container">
-            <h2 class="section-title prices__title">
-              Стоимость наших услуг, а также срок оформления РУ зависит от класса риска медицинского изделия</h2>
-            <div class="inner-container">
-              <ul class="prices__list">
-                <li class="prices__item">
-                  <h3 class="prices__item-title">
-                    <span>1</span> класс риска
-                  </h3>
-                  <div class="prices__item-info">
-                    <div>
-                      <h4>Нац. правила</h4>
-                      <p>Срок оформления
-                        <span>от 12 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>95 000 Р</span>
-                      </p>
-                    </div>
-                    <div>
-                      <h4>ЕАЭС</h4>
-                      <p>Срок оформления
-                        <span>от 14 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>109 000 Р</span>
-                      </p>
-                    </div>
-                  </div>
-                  <p class="prices__item-note">Стоимость ВИРД:
-                    <span>70 000 Р</span>
-                    (в месяц)</p>
-                  <a href="" class="button prices__item-button">Заказать оформление</a>
+            <header class="section-header">
+              <h2 class="section-title">
+                <a class="menu__back-link">
+                  <svg width="51" height="16">
+                    <use xlink:href="#icon-arrow-back"></use>
+                  </svg>
+                </a>
+                Меню</h2>
+              <ul class="section-header__links">
+                <li>
+                  <a data-link="cigar">Хъюмедор</a>
                 </li>
-                <li class="prices__item">
-                  <h3 class="prices__item-title">
-                    <span>2а</span> класс риска
-                  </h3>
-                  <div class="prices__item-info">
-                    <div>
-                      <h4>Нац. правила</h4>
-                      <p>Срок оформления
-                        <span>от 14 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>105 000 Р</span>
-                      </p>
-                    </div>
-                    <div>
-                      <h4>ЕАЭС</h4>
-                      <p>Срок оформления
-                        <span>от 16 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>121 000 Р</span>
-                      </p>
-                    </div>
-                  </div>
-                  <p class="prices__item-note">Стоимость ВИРД:
-                    <span>80 000 Р</span>
-                    (в месяц)</p>
-                  <a href="" class="button prices__item-button">Заказать оформление</a>
-                </li>
-                <li class="prices__item">
-                  <h3 class="prices__item-title">
-                    <span>2б</span> класс риска
-                  </h3>
-                  <div class="prices__item-info">
-                    <div>
-                      <h4>Нац. правила</h4>
-                      <p>Срок оформления
-                        <span>от 16 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>115 000 Р</span>
-                      </p>
-                    </div>
-                    <div>
-                      <h4>ЕАЭС</h4>
-                      <p>Срок оформления
-                        <span>от 18 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>132 000 Р</span>
-                      </p>
-                    </div>
-                  </div>
-                  <p class="prices__item-note">Стоимость ВИРД:
-                    <span>90 000 Р</span>
-                    (в месяц)</p>
-                  <a href="" class="button prices__item-button">Заказать оформление</a>
-                </li>
-                <li class="prices__item">
-                  <h3 class="prices__item-title">
-                    <span>3</span> класс риска
-                  </h3>
-                  <div class="prices__item-info">
-                    <div>
-                      <h4>Нац. правила</h4>
-                      <p>Срок оформления
-                        <span>от 18 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>125 000 Р</span>
-                      </p>
-                    </div>
-                    <div>
-                      <h4>ЕАЭС</h4>
-                      <p>Срок оформления
-                        <span>от 20 месяцев</span>
-                      </p>
-                      <p>Стоимость ( в месяц)
-                        <span>144 000 Р</span>
-                      </p>
-                    </div>
-                  </div>
-                  <p class="prices__item-note">Стоимость ВИРД:
-                    <span>100 000 Р</span>
-                    (в месяц)</p>
-                  <a href="" class="button prices__item-button">Заказать оформление</a>
+                <li>
+                  <a data-link="wine">Винный погреб</a>
                 </li>
               </ul>
-              <div class="prices__info">
-                <h3>В стоимость услуги <span>не</span> входит:</h3>
-                <p>Госпошлины за регистрацию и экспертизу качества. Размер госпошлин зависит от класса риска медицинского изделия и от выбранной заказчиком схемы регистрации (по ЕАЭС или по национальным правилам);</p>
-                <p>Испытания медицинских изделий в лабораториях (стоимость испытаний рассчитывается индивидуально и зависит от вида медицинского изделия);</p>
-                <p>Перевод, нотариальное заверение, апостилирование (либо консульское заверение) документов.</p>
-                <p>Выезд на производство с целию инспектирования (по правилам ЕАЭС)</p>
+            </header>
+          </div>
+
+          <div class="container menu__links">
+            <p class="menu__links__tip">нажмите на изображение чтобы перейти в  раздел</p>
+            <div class="menu__links-wrapper">
+              <img class="menu__dark-img" src="img/dark-links.png" srcset="img/dark-links.png 1x, img/dark-links@2x.png 2x" width="829" height="512" alt="">
+              <a class="menu__link menu__link--wine" aria-label="Винный погреб" data-link="wine">
+                <img src="img/wine.png" srcset="img/wine.png 1x, img/wine@2x.png 2x" width="829" height="512" alt="Изображение бокала">
+              </a>
+              <a class="menu__link menu__link--cigar" aria-label="Хьюмидор" data-link="cigar">
+                <img src="img/cigar.png" srcset="img/cigar.png 1x, img/cigar@2x.png 2x" width="829" height="292" alt="Изображение сигары">
+              </a>
+            </div>
+
+            <a class="link-down" href="#interior">
+              <svg width="16" height="51">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+              <span>наши интерьеры</span>
+            </a>
+          </div>
+
+          <div class="menu__part menu__part--cigar" id="cigar">
+            <div class="container">
+              <div class="menu__part-left">
+                <a class="menu__back-link">
+                  <svg width="51" height="16">
+                    <use xlink:href="#icon-arrow-back"></use>
+                  </svg>
+                </a>
+                <p>Идейные соображения высшего порядка, а также сплочённость команды профессионалов в значительной степени обусловливает важность укрепления моральных ценностей.</p>
+              </div>
+              <div class="menu__part-list">
+                <div class="filter">
+                  <button class="filter__header js_open-filter">выбрать категорию</button>
+                  <div class="filter__parameters">
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                    <label>
+                      <input type="radio" class="visually-hidden" name="filter" value="">
+                      <span>категория1</span>
+                    </label>
+                  </div>
+                </div>
+                <h3>Заголовок</h3>
+                <table>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Пункт мень (шт)</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                  <tr>
+                    <td>Обычный пункт меню</td>
+                    <td>2000₽</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
-        </section>
-        <section id="stages" class="stages">
-          <div class="container">
-            <h2 class="section-title stages__title">
-              <span></span>
-              Этапы оформления регистрационного удостоверения</h2>
-            <ol class="stages__list">
-                <li class="stages__item">
-                  <p>Оформление заявления на регистрацию</p>
-                </li>
-                <li class="stages__item">
-                  <p>Подготовка полного пакета технической документации согласно требованиям Единой Системы Конструкторской Документации</p>
-                </li>
-                <li class="stages__item">
-                  <p>Подбор аккредитованных лабораторий для проведения испытаний (технических, токсикологических, клинических)</p>
-                </li>
-                <li class="stages__item">
-                  <p>Полное сопровождение испытаний, включая подготовку документов для лабораторий и проверку макетов протоколов испытаний</p>
-                </li>
-                <li class="stages__item">
-                  <p>Сбор и подача досье в Росздравнадзор</p>
-                </li>
-                <li class="stages__item">
-                  <p>Контроль за состоянием досье в Росздравнадзоре</p>
-                </li>
-                <li class="stages__item">
-                  <p>Обработка запросов Росздравнадзора</p>
-                </li>
-                <li class="stages__item">
-                  <p>Постоянное информирование заказчика о продвижении процесса регистрации</p>
-                </li>
-                <li class="stages__item">
-                  <p>Получение готового РУ и его доставка заказчику</p>
-                </li>
-            </ol>
-          </div>
-        </section>
-        <section class="consultation" style="background-image: url('img/form-bg@2x.png');">
-          <div class="container">
-            <h2 class="section-title consultation__title">Получите беcплатную консультацию</h2>
-            <form action="" method="post" class="consultation__form">
-              <div class="consultation__form-inputs">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="tel" name="tel" placeholder="Номер телефона" required>
+
+          <div class="menu__part menu__part--wine" id="wine">
+              <div class="container">
+                <div class="menu__part-left">
+                  <a class="menu__back-link">
+                    <svg width="51" height="16">
+                      <use xlink:href="#icon-arrow-back"></use>
+                    </svg>
+                  </a>
+                  <p>Идейные соображения высшего порядка, а также сплочённость команды</p>
+                </div>
+                <div class="menu__part-list">
+                  <div class="filter">
+                    <button class="filter__header js_open-filter">выбрать категорию</button>
+                    <div class="filter__parameters">
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="visually-hidden" name="filter" value="">
+                        <span>категория1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <h3>Заголовок</h3>
+                  <table>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Пункт мень (шт)</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Очень длинный пункт меню Очень длинный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                    <tr>
+                      <td>Обычный пункт меню</td>
+                      <td>2000₽</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
-              <div class="consultation__form-buttons">
-                <button class="button consultation__form-button">Заказать консультацию</button>
-                <p class="consultation__form-consent">Нажимая эту кнопку Вы соглашаетесь с нашей <a href="#">политикой конфидециальности</a></p>
-              </div>
-            </form>
-          </div>
-        </section>
-        <section id="about" class="about">
-          <div class="container about__container">
-            <div class="about__left">
-              <h2 class="section-title about__title">
-                <span></span>
-                О компании</h2>
-                <img src="img/logo-about.svg" width="291" height="127" alt="Логотип">
             </div>
-            <div class="about__text">
-              <p>ООО «Смарт Медикал Групп» является неотъемлемой частью Группы Компаний «СМАРТ», которая с 2016 года занимается подтверждением соответствия качества продукции.</p>
-              <p>На сегодняшний день в нашем арсенале числится от 45 постоянно активных дел. Динамика постоянно растет. Среди наших постоянных клиентов такие компании как:  “Эдан”, “Миндрэй”, “Рамтэк”, “Детская восстановительная медицина”. В составе компании работает квалифицированная группа экспертов, как по национальным стандартам, так и по ЕАЭС.</p>
-            </div>
-          </div>
+
         </section>
-        <section class="advantages">
+        <section class="interior" id="interior">
           <div class="container">
-            <h2 class="section-title advantages__title">Многие клиенты доверяют нам оформление регистрационного удостоверения</h2>
-            <div class="inner-container">
-              <ul class="advantages__list">
-                <li class="advantages__item">
-                  <h3>Клиент работает с экспертом</h3>
-                  <p>Отсутствие «испорченного телефона». Клиент работает непосредственно с экспертом, который ведет всю работу с момента заполнения заявления на регистрацию до получения готового регистрационного удостоверения.</p>
+            <header class="section-header">
+              <h2 class="section-title">Интерьер</h2>
+              <ul class="section-header__links">
+                <li>
+                  <a data-link="hall">Зал</a>
                 </li>
-                <li class="advantages__item">
-                  <h3>Точный режим работы</h3>
-                  <p>Наша практика позволяет сформировать точный формат работы, исключить максимальное количество форс-мажоров. До заключения договора формируем этапы, обозначаем сроки. Фиксируем все в договоре.</p>
+                <li>
+                  <a data-link="storehouse">Хранилище</a>
                 </li>
-                <li class="advantages__item">
-                  <h3>Испытательные лаболатории</h3>
-                  <p>Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ» ряд испытательных лабораторий. В связи с этим, в рамках нашей аккредитации мы предлагаем максимально гибкую и лучшую на рынке ценовую политику и сроки оформления.</p>
-                </li>
-                <li class="advantages__item">
-                  <h3>Удобный формат оплаты</h3>
-                  <p>Система оплаты представлена в виде абонентской платы, что создает удобство и прозрачность для заказчика.</p>
+                <li>
+                  <a data-link="bar">Бар</a>
                 </li>
               </ul>
+            </header>
+            <div class="interior__content">
+              <div class="interior__left">
+                <div data-section-show="hall">
+                  <h2>Зал</h2>
+                  <p>Идейные соображения высшего порядка, а также сплочённость команды профессионалов в значительной степени</p>
+                </div>
+                <div data-section-show="storehouse">
+                  <h2>Хранилище</h2>
+                  <p>Идейные соображения высшего порядка, а также сплочённость команды профессионалов в значительной степени обусловливает важность укрепления моральных ценностей. Идейные соображения высшего порядка, а также сплочённость</p>
+                </div>
+                <div data-section-show="bar">
+                  <h2>Бар</h2>
+                  <p>Идейные соображения высшего порядка, а также сплочённость команды профессионалов в значительной степени обусловливает важность укрепления моральных ценностей.</p>
+                </div>
+              </div>
+              <div class="interior__right">
+                <div class="interior__slider-wrapper">
+                  <div class="interior__slider-container swiper-container">
+                    <ul class="interior__slider swiper-wrapper">
+                      <li class="interior__slide swiper-slide" data-section="hall">
+                        <img src="img/slide-1.jpg" width="500" height="600" alt="Фотография зала" srcset="img/slide-1.jpg 1x, img/slide-1@2x.jpg 2x">
+                      </li>
+                      <li class="interior__slide swiper-slide" data-section="hall">
+                        <img src="img/intro-img-1.jpg" width="500" height="600" alt="Фотография зала" srcset="img/intro-img-1.jpg 1x, img/intro-img-1@2x.jpg 2x">
+                      </li>
+                      <li class="interior__slide swiper-slide" data-section="storehouse">
+                        <img src="img/intro-mobile-img-2.jpg" width="500" height="600" alt="Фотография хранилища" srcset="img/intro-mobile-img-2.jpg 1x, img/intro-mobile-img-2@2x.jpg 2x">
+                      </li>
+                      <li class="interior__slide swiper-slide" data-section="bar">
+                        <img src="img/intro-mobile-bg.jpg" width="500" height="600" alt="Фотография бара"  srcset="img/intro-mobile-bg.jpg 1x, img/intro-mobile-bg@2x.jpg 2x">
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="slider-btn slider-btn--prev swiper-button-prev">
+                    <svg width="31" height="16">
+                      <use xlink:href="#icon-slider-arrow"></use>
+                    </svg>
+                  </a>
+                  <a class="slider-btn slider-btn--next swiper-button-next">
+                    <svg width="31" height="16">
+                      <use xlink:href="#icon-slider-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="interior__next-slide-preview"></div>
+                <div class="interior__after-next-slide-preview"></div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="faq">
-          <div class="container">
-            <h2 class="section-title faq__title">
-              <span>Вы спрашиваете</span>
-              Частые вопросы</h2>
-              <ul class="faq__list">
-                <li class="faq__list-item">
-                  <div class="faq__list-item-content">
-                    <div class="faq__list-question">Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?</div>
-                    <div class="faq__list-answer">
-                      <p>ООО «Смарт Медикал Групп» является неотъемлемой частью Группы Компаний «СМАРТ», которая с 2016 года занимается подтверждением соответствия качества продукции.</p>
-                      <p>На сегодняшний день в нашем арсенале числится от 45 постоянно активных дел. Динамика постоянно растет. Среди наших постоянных клиентов такие компании как:  “Эдан”, “Миндрэй”, “Рамтэк”, “Детская восстановительная медицина”. В составе компании работает квалифицированная группа экспертов, как по национальным стандартам, так и по ЕАЭС.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__list-item">
-                  <div class="faq__list-item-content">
-                    <div class="faq__list-question">Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?</div>
-                    <div class="faq__list-answer">
-                      <p>ООО «Смарт Медикал Групп» является неотъемлемой частью Группы Компаний «СМАРТ», которая с 2016 года занимается подтверждением соответствия качества продукции.</p>
-                      <p>На сегодняшний день в нашем арсенале числится от 45 постоянно активных дел. Динамика постоянно растет. Среди наших постоянных клиентов такие компании как:  “Эдан”, “Миндрэй”, “Рамтэк”, “Детская восстановительная медицина”. В составе компании работает квалифицированная группа экспертов, как по национальным стандартам, так и по ЕАЭС.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__list-item">
-                  <div class="faq__list-item-content">
-                    <div class="faq__list-question">Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?</div>
-                    <div class="faq__list-answer">
-                      <p>ООО «Смарт Медикал Групп» является неотъемлемой частью Группы Компаний «СМАРТ», которая с 2016 года занимается подтверждением соответствия качества продукции.</p>
-                      <p>На сегодняшний день в нашем арсенале числится от 45 постоянно активных дел. Динамика постоянно растет. Среди наших постоянных клиентов такие компании как:  “Эдан”, “Миндрэй”, “Рамтэк”, “Детская восстановительная медицина”. В составе компании работает квалифицированная группа экспертов, как по национальным стандартам, так и по ЕАЭС.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__list-item">
-                  <div class="faq__list-item-content">
-                    <div class="faq__list-question">Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?</div>
-                    <div class="faq__list-answer">
-                      <p>ООО «Смарт Медикал Групп» является неотъемлемой частью Группы Компаний «СМАРТ», которая с 2016 года занимается подтверждением соответствия качества продукции.</p>
-                      <p>На сегодняшний день в нашем арсенале числится от 45 постоянно активных дел. Динамика постоянно растет. Среди наших постоянных клиентов такие компании как:  “Эдан”, “Миндрэй”, “Рамтэк”, “Детская восстановительная медицина”. В составе компании работает квалифицированная группа экспертов, как по национальным стандартам, так и по ЕАЭС.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__list-item">
-                  <div class="faq__list-item-content">
-                    <div class="faq__list-question">Мы не просто консалтинговый центр. В собственности холдинга ГК «СМАРТ»?</div>
-                    <div class="faq__list-answer">
-                      <p>ООО «Смарт Медикал Групп» является неотъемлемой частью Группы Компаний «СМАРТ», которая с 2016 года занимается подтверждением соответствия качества продукции.</p>
-                      <p>На сегодняшний день в нашем арсенале числится от 45 постоянно активных дел. Динамика постоянно растет. Среди наших постоянных клиентов такие компании как:  “Эдан”, “Миндрэй”, “Рамтэк”, “Детская восстановительная медицина”. В составе компании работает квалифицированная группа экспертов, как по национальным стандартам, так и по ЕАЭС.</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
           </div>
         </section>
       </main>
-      <footer id="footer" class="page-footer">
-        <div class="container">
-          <img src="img/logo-footer.svg" width="235" height="132" alt="Логотип" class="page-footer__logo">
-        </div>
-      </footer>
+      <footer class="footer"></footer>
     </div>
-    <script src="js/vendor.js"></script>
+    <script src="js/libs.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
