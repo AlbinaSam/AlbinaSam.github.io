@@ -1,3 +1,12 @@
+function addMask(currentTelInput) {
+  window.iMaskJS(currentTelInput, {mask: '+{7}(000)000-00-00'});
+}
+
+const telInput = document.querySelector('input[type="tel"]');
+  if (telInput) {
+    addMask(telInput);
+  }
+
 const openMenuButton = document.querySelector('.header__open-menu');
 const closeMenuButton = document.querySelector('.header__close-menu');
 const nav = document.querySelector('.header__nav');
@@ -94,14 +103,14 @@ if (darkMenuImg && menuLinksWrapper) {
     // }
 
   if (pageYOffset >= top) {
-    darkMenuImg.style.animationName = 'smooth';
+    darkMenuImg.style.animationName = 'fadeOut';
     menuLinksWrapper.classList.add('hidden-bg');
   }
 
   window.addEventListener('scroll', function () {
 
     if (pageYOffset >= top) {
-      darkMenuImg.style.animationName = 'smooth';
+      darkMenuImg.style.animationName = 'fadeOut';
       menuLinksWrapper.classList.add('hidden-bg');
     } else {
       darkMenuImg.removeAttribute('style');
@@ -121,6 +130,7 @@ const headerWineLink = menuSection.querySelector('.section-header__links [data-l
 const menuLinks = menuSection.querySelector('.menu__links');
 const cigarMenu = menuSection.querySelector('.menu__part--cigar');
 const wineMenu = menuSection.querySelector('.menu__part--wine');
+const sectionHeaderBackLink = menuSection.querySelector('.section-title .menu__back-link');
 
 const backLinks = menuSection.querySelectorAll('.menu__back-link');
 if (backLinks.length > 0) {
@@ -129,6 +139,7 @@ if (backLinks.length > 0) {
 
       currentOpenMenu.classList.remove('visible');
       menuLinks.classList.remove('hidden');
+      sectionHeaderBackLink.removeAttribute('style');
 
       currentOpenMenu = '';
 
@@ -160,6 +171,10 @@ if (wineMenuLinks.length > 0) {
 
       headerCigarLink.classList.remove('active');
       headerWineLink.classList.add('active');
+
+      if (document.body.clientWidth <= '1024') {
+        sectionHeaderBackLink.style.display = 'flex';
+      }
     })
   })
 }
@@ -179,6 +194,10 @@ if (cigarMenuLinks.length > 0) {
 
       headerWineLink.classList.remove('active');
       headerCigarLink.classList.add('active');
+
+      if (document.body.clientWidth <= '1024') {
+        sectionHeaderBackLink.style.display = 'flex';
+      }
     })
   })
 }
@@ -219,7 +238,7 @@ if (filterOpenButtons.length > 0) {
 }
 
 
-// слайдер
+// слайдеры
 const interiorSection = document.querySelector('.interior');
 const interiorSliderWrapper = interiorSection.querySelector('.interior__slider-wrapper');
 const interiorSliderContainer = interiorSection.querySelector('.interior__slider-container');
@@ -255,6 +274,7 @@ if (interiorSliderContainer) {
 
     const actualText = document.querySelector('[data-section-show="' + dataValue + '"]');
     actualText.style.display="block";
+    actualText.style.animationName = 'fadeIn';
 
     const currentLink = document.querySelector('[data-link="' + dataValue + '"]');
     currentLink.classList.add('active');
@@ -296,7 +316,7 @@ if (interiorSliderContainer) {
   swiper.on('slideChangeTransitionEnd', function () {
     if (actualSections) {
       actualSections.forEach((section) => {
-        section.style.display="none";
+        section.removeAttribute('style');
       })
     }
 
@@ -311,3 +331,29 @@ if (interiorSliderContainer) {
     showNextSlidesPreview();
   })
 }
+
+
+// const eventsSliderWrapper = document.querySelector('.events__slider-wrapper');
+// const eventsSliderContainer = document.querySelector('.events__slider-container');
+
+// if (eventsSliderContainer) {
+//   const sliderNextButton = eventsSliderWrapper.querySelector('.slider-btn--next');
+//   const sliderPrevButton = eventsSliderWrapper.querySelector('.slider-btn--prev');
+
+//   const swiper = new Swiper (eventsSliderContainer, {
+//     slidesPerView: 4,
+//     spaceBetween: 30,
+//     direction: 'horizontal',
+//     //effect: "fade",
+
+//     navigation: {
+//       nextEl: sliderNextButton,
+//       prevEl: sliderPrevButton,
+//     },
+
+//     // autoplay: {
+//     //   delay: 3500,
+//     //   disableOnInteraction: true,
+//     // },
+//   });
+// }
