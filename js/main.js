@@ -37,13 +37,13 @@ function openModal(currentModal) {
   document.addEventListener(`keydown`, onEscButtonPress);
 }
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const confirmAgeModal = document.querySelector('.modal--confirm-age');
+window.addEventListener('DOMContentLoaded', () => {
+  const confirmAgeModal = document.querySelector('.modal--confirm-age');
 
-//   if (confirmAgeModal) {
-//     openModal(confirmAgeModal);
-//   }
-// });
+  if (confirmAgeModal) {
+    openModal(confirmAgeModal);
+  }
+});
 
 
 function addMask(currentTelInput) {
@@ -55,6 +55,7 @@ const telInput = document.querySelector('input[type="tel"]');
     addMask(telInput);
   }
 
+// открытие-закрытие навигации
 const openMenuButton = document.querySelector('.header__open-menu');
 const closeMenuButton = document.querySelector('.header__close-menu');
 const nav = document.querySelector('.header__nav');
@@ -98,7 +99,7 @@ if (menuItemsLinks.length > 0) {
   })
 }
 
-
+// размытие при ховере на изображения сигары и бокала
 const cigarLink = document.querySelector('.menu__link--cigar');
 const wineLink = document.querySelector('.menu__link--wine');
 
@@ -120,17 +121,11 @@ if (cigarLink && wineLink) {
   })
 }
 
-
-//наползающий фон
-
+//наползающий фон в хедере
 const slippingBg = document.querySelector('.header__slipping-bg');
  if (slippingBg) {
-
   window.addEventListener('scroll', function() {
     const curentPageOffset = pageYOffset;
-
-    
-
     if (pageYOffset > 1) {
       if (document.body.clientWidth < '768') {
         slippingBg.style.height = 100 + (curentPageOffset / 2)  + 'px';
@@ -142,17 +137,11 @@ const slippingBg = document.querySelector('.header__slipping-bg');
  }
 
  //осветление меню
-
 const darkMenuImg = document.querySelector('.menu__dark-img');
 const menuLinksWrapper = document.querySelector('.menu__links');
 
 if (darkMenuImg && menuLinksWrapper) {
-
   let top = menuLinksWrapper.getBoundingClientRect().top + window.scrollY - document.documentElement.clientHeight / 2;
-
-    // if (document.body.clientWidth < '768') {
-    //   top = section.getBoundingClientRect().top + window.scrollY - document.documentElement.clientHeight / 1.5;
-    // }
 
   if (pageYOffset >= top) {
     darkMenuImg.style.animationName = 'fadeOut';
@@ -171,8 +160,7 @@ if (darkMenuImg && menuLinksWrapper) {
   })
 }
 
-
-//Меню
+// открытие-закрытие меню сигар и меню бара
 const menuSection = document.querySelector('.menu');
 const cigarMenuLinks = document.querySelectorAll('[data-link="cigar"]');
 const wineMenuLinks = document.querySelectorAll('[data-link="wine"]');
@@ -205,7 +193,6 @@ if (backLinks.length > 0) {
 }
 
 let currentOpenMenu = '';
-
 
 if (wineMenuLinks.length > 0) {
   wineMenuLinks.forEach((link) => {
@@ -254,8 +241,7 @@ if (cigarMenuLinks.length > 0) {
   })
 }
 
-
-//фильтр
+// открытие-закрытие фильтра
 const filterOpenButtons = document.querySelectorAll('.js_open-filter');
 
 if (filterOpenButtons.length > 0) {
@@ -386,6 +372,45 @@ if (interiorSliderContainer) {
   })
 }
 
+const smoke1 = document.querySelector('.interior__smoke-1');
+const smoke2 = document.querySelector('.interior__smoke-2');
+
+if (smoke1) {
+  let top = smoke1.getBoundingClientRect().top + window.scrollY - document.documentElement.clientHeight / 2;
+
+  if (window.scrollY >= top) {
+    smoke1.classList.add('animate');
+  } else {
+    smoke1.classList.remove('animate');
+  }
+
+  window.addEventListener('scroll', function () {   
+    if (window.scrollY >= top) {
+      smoke1.classList.add('animate');
+    } else {
+      smoke1.classList.remove('animate');
+    }
+  })
+}
+
+if (smoke2) {
+  let top = smoke2.getBoundingClientRect().top + window.scrollY - document.documentElement.clientHeight / 2;
+
+  if (window.scrollY >= top) {
+    smoke2.classList.add('animate');
+  } else {
+    smoke2.classList.remove('animate');
+  }
+
+  window.addEventListener('scroll', function () {   
+    if (window.scrollY >= top) {
+      smoke2.classList.add('animate');
+    } else {
+      smoke2.classList.remove('animate');
+    }
+  })
+}
+  
 
 //Афиша
 const eventsSection = document.querySelector('.events');
@@ -409,7 +434,7 @@ let currentOpenEvents = nextEvents;
 
 if (eventsSliderWrappers.length > 0) {
   eventsSliderWrappers.forEach((eventsSliderWrapper) => {
-    //const eventsSliderWrapper = document.querySelector('.events__slider-wrapper');
+
     const eventsSliderContainer = eventsSliderWrapper.querySelector('.events__slider-container');
     const eventsSlider = eventsSliderWrapper.querySelector('.events__slider');
 
@@ -592,9 +617,6 @@ if (eventsSliderWrappers.length > 0) {
                 })
               })
             }
-
-
-
           })
         })
       }
@@ -639,8 +661,3 @@ if (lastEventsLinks.length > 0) {
     })
   })
 }
-
-
-// document.addEventListener('scroll', function () {
-
-// })
