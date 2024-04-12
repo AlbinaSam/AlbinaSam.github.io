@@ -51,9 +51,14 @@ function addMask(currentTelInput) {
 }
 
 const telInput = document.querySelector('input[type="tel"]');
-  if (telInput) {
-    addMask(telInput);
-  }
+if (telInput) {
+  addMask(telInput);
+}
+
+Fancybox.bind("[data-fancybox]", {
+  Thumbs: false,
+  zoom: false,
+});
 
 // открытие-закрытие навигации
 const openMenuButton = document.querySelector('.header__open-menu');
@@ -384,7 +389,7 @@ if (smoke1) {
     smoke1.classList.remove('animate');
   }
 
-  window.addEventListener('scroll', function () {   
+  window.addEventListener('scroll', function () {
     if (window.scrollY >= top) {
       smoke1.classList.add('animate');
     } else {
@@ -402,7 +407,7 @@ if (smoke2) {
     smoke2.classList.remove('animate');
   }
 
-  window.addEventListener('scroll', function () {   
+  window.addEventListener('scroll', function () {
     if (window.scrollY >= top) {
       smoke2.classList.add('animate');
     } else {
@@ -410,7 +415,7 @@ if (smoke2) {
     }
   })
 }
-  
+
 
 //Афиша
 const eventsSection = document.querySelector('.events');
@@ -505,20 +510,20 @@ if (eventsSliderWrappers.length > 0) {
 
             function returnToSlider () {
               eventsDownLink.classList.remove('hidden');
-            
+
               nextEventImg.classList.remove('visible');
               nextEventImg.removeAttribute('src');
-            
+
               lastEventImgContainer.classList.remove('visible');
-            
+
               currentSlide.classList.remove('show-details');
-            
+
               eventsSlides.forEach((slide) => {
                 if (slide != currentSlide) {
                   slide.classList.remove('hidden');
                 }
               })
-            
+
               eventsSliderWrapper.classList.remove('show-slide-mode');
               swiper.enable();
             }
@@ -554,7 +559,7 @@ if (eventsSliderWrappers.length > 0) {
               eventsBackLink.classList.add('visible');
 
               eventsBackLink.addEventListener('click', function () {
-                
+
                 eventsBackLink.classList.remove('visible');
                 returnToSlider();
                 eventsSlider.setAttribute('style', eventsSliderStyles);
@@ -563,7 +568,7 @@ if (eventsSliderWrappers.length > 0) {
               eventsSectionHeaderBackLink.style.display = 'flex';
 
               eventsSectionHeaderBackLink.addEventListener('click', function () {
-                
+
                 eventsSectionHeaderBackLink.removeAttribute('style');
                 returnToSlider();
                 eventsSlider.setAttribute('style', eventsSliderStyles);
@@ -578,22 +583,22 @@ if (eventsSliderWrappers.length > 0) {
                   eventsSectionHeaderBackLink.removeAttribute('style');
                   returnToSlider();
                   eventsSlider.setAttribute('style', eventsSliderStyles);
-            
+
                   lastEvents.classList.add('visually-hidden');
                   nextEvents.classList.remove('visually-hidden');
-            
+
                   if (currentOpenEvents && currentOpenEvents != nextEvents) {
                     currentOpenEvents.classList.add('visually-hidden');
                   }
-            
+
                   currentOpenEvents = nextEvents;
-            
+
                   headerLastEventsLink.classList.remove('active');
                   headerNextEventsLink.classList.add('active');
                 })
               })
             }
-            
+
             if (lastEventsLinks.length > 0) {
               lastEventsLinks.forEach((link) => {
                 link.addEventListener('click', function () {
@@ -602,16 +607,16 @@ if (eventsSliderWrappers.length > 0) {
                   eventsSectionHeaderBackLink.removeAttribute('style');
                   returnToSlider();
                   eventsSlider.setAttribute('style', eventsSliderStyles);
-            
+
                   nextEvents.classList.add('visually-hidden');
                   lastEvents.classList.remove('visually-hidden');
-                  
+
                   if (currentOpenEvents && currentOpenEvents != lastEvents) {
                     currentOpenEvents.classList.add('visually-hidden');
                   }
-            
+
                   currentOpenEvents = lastEvents;
-            
+
                   headerNextEventsLink.classList.remove('active');
                   headerLastEventsLink.classList.add('active');
                 })
@@ -649,7 +654,7 @@ if (lastEventsLinks.length > 0) {
 
       nextEvents.classList.add('visually-hidden');
       lastEvents.classList.remove('visually-hidden');
-      
+
       if (currentOpenEvents && currentOpenEvents != lastEvents) {
         currentOpenEvents.classList.add('visually-hidden');
       }
